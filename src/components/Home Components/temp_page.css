@@ -1,0 +1,31 @@
+.computer2 {
+    width: 98%;
+    height: 98%;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.folder {
+    margin: 10px;
+    width: 75px;
+    height: 75px;
+    position: relative;
+    left: 95px;
+}
+
+#resources {
+    position: relative;
+    top: 120px;
+    left: 0;
+}
+
+.folder p{
+    position: relative;
+    bottom: 20px;
+    color: white;
+}
+
