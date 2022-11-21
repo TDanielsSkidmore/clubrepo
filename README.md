@@ -68,3 +68,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+###Additional info
+
+- Home page will be a computer on the page in which you can log onto and get access to a Desktop filled with "folders". Each "folder" you can click on and it will take you to something else.
+Ideas for the "folders":
+1.) general info like meeting times, Mission Stmt, board members.
+2.) cool games that people design and we host on the website
+3.) easter eggs like a "folder name" system info that says "This computer runs on Prasads A64 Proccessor"
+4.) Puzzels,Riddels and jokes (maybe even to win prizes or titles"
+
