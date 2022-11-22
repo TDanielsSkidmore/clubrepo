@@ -7,21 +7,15 @@
     display: inline-flex;
     justify-content: flex-end;
     align-items: flex-start;
+    flex-wrap: nowrap;
 }
 
 .folder {
-    margin: 10px;
+    margin: 15px;
     width: 75px;
     height: 75px;
-    position: relative;
-    left: 95px;
 }
 
-#resources {
-    position: relative;
-    top: 120px;
-    left: 0;
-}
 
 .folder p{
     position: relative;
