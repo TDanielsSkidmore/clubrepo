@@ -5,7 +5,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import {Home} from './components/Home'
 import {About} from './components/About'
 import {Spotlight} from './components/Spotlight'
-import {Events} from './components/Events'
+import {Events} from './components/Events/Events'
 
 function App() {
   return (
