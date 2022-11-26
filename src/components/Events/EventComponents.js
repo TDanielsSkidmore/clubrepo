@@ -11,7 +11,7 @@ export const Event = (props) => {
                 <img src={props.photo} alt='' ></img>
             </div>
             <div className='date'>
-                <p>Date: {props.date}</p>
+                <p>Date: {props.date}({props.status})</p>
             </div>
             <div className='discription'>
                 <p>{props.discription}</p>

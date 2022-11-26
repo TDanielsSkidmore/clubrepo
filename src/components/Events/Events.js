@@ -27,7 +27,7 @@ export const Events = () => {
         <div className='events '>
             {events.length > 0 && (
                 events.map(event => (
-                    <Event title={event.title} photo={event.photo} discription={event.discription} date={event.date}/>
+                    <Event title={event.title} photo={event.photo} discription={event.discription} date={event.date} status={event.status}/>
                 ))
             )}
         </div>
