@@ -7,11 +7,11 @@ export const Login = (props) => {
             <form>
                 <div className='enterBox'>
                     <label for='user'>Enter Username</label>
-                    <input type={Text} value='codeaholics' name='user' ></input>
+                    <input type={Text} value='Click' name='user' ></input>
                 </div>
                 <div className='enterBox'>
                     <label for='user'>Enter Password</label>
-                    <input type={Text} value='********** ' name='user' ></input>
+                    <input type={Text} value='Submit' name='user' ></input>
                 </div>
                 <div className='enterBox2'>
                     <button onClick={props.handleClick}>submit</button>

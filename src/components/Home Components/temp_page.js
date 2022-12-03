@@ -7,6 +7,7 @@ import { Mission } from './pages/missionComponent';
 import { Resources } from './pages/resourcesComponent';
 import { System } from './pages/systemInfoComponent';
 import { Riddle } from './riddel/RiddleMessageComponent';
+import { MagicTrick } from './pages/magicTrickComponent';
 export const TempPage = () => {
 
     const [show, setShow] = useState("no show");
@@ -19,9 +20,15 @@ export const TempPage = () => {
 
     return (
        <div className='computer2' style={{backgroundImage: "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbrm0UliwQMCywi8OJmE5mpImYZnMY5iOxhQ&usqp=CAU)"}}>
-            <div className='folder' id='resources' onClick={() => setShow("riddle")}>
-                <img src={folder} alt='home' className='folderSVG'></img>
-                <p>Riddle</p>
+            <div className='FirstRow'>
+                <div className='folder' id='resources' onClick={() => setShow("riddle")}>
+                    <img src={folder} alt='home' className='folderSVG'></img>
+                    <p>Riddle</p>
+                </div>
+                <div className='folder' id='resources' onClick={() => setShow("magic")}>
+                    <img src={folder} alt='home' className='folderSVG'></img>
+                    <p>Magic Trick</p>
+                </div>
             </div>
             <div className='secondRow'>
                 <div className='folder' id='resources' onClick={() => setShow("system")}>
@@ -53,6 +60,7 @@ export const TempPage = () => {
             <Resources show={show} changeShow={changeShow}/>
             <System show={show} changeShow={changeShow}/>
             <Riddle show={show} changeShow={changeShow}/>
+            <MagicTrick show={show} changeShow={changeShow}/>
        </div>
     )
 }
