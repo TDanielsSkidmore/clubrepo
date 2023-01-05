@@ -1,7 +1,27 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './RiddleMessageComponent.css'
 import x from '../../../x.svg'
 export const Riddle = (props) => {
+    const url = 'https://tdanielsskidmore.github.io/events/test.json';
+
+    const [riddle, setRiddle] = useState([])
+
+    const fetchData = () => {
+        fetch(url)
+        .then(response => {
+            return response.json()
+        })
+        .then(data => {
+            setRiddle(data[0].riddle)
+        })
+    }
+
+    useEffect(() => {
+        fetchData()
+    }, []);
+
+
+
     if (props.show ==="riddle"){
         return (
             <div className='page'>
@@ -17,11 +37,11 @@ export const Riddle = (props) => {
             <div className='page'>
                 <img src={x} alt='home' className='xSVG' onClick={() => props.changeShow("no show")}></img>
                 <h1>The Riddle</h1>
-                <h3>Mountains without rocks</h3>
-                <h3>Trees without leaves</h3>
-                <h3>Buildings without bricks</h3>
-                <h3>Water but no fish</h3>
-                <h3>What am I?</h3>
+                {riddle.length > 0 && (
+                    riddle.map(obj => (
+                        <h3>{obj}</h3>
+                    ))
+                )}
             </div>
         )
     }

@@ -1,9 +1,33 @@
 import React, {useState, useEffect} from 'react';
 import {SpotlightComponent} from './spotlightComponent/spotlightComponent.js'
 export const Spotlight = () => {
+
+    const url = 'https://tdanielsskidmore.github.io/events/test.json';
+
+    const [spotlight, setSpotlight] = useState([])
+
+    const fetchData = () => {
+        fetch(url)
+        .then(response => {
+            return response.json()
+        })
+        .then(data => {
+            setSpotlight(data[0].spotlight)
+        })
+    }
+
+    useEffect(() => {
+        fetchData()
+    }, []);
+
+
     return (
         <div>
-            <SpotlightComponent title='Project: Digital Interactive Map of CIS Building' discription='We are currently working on creating an interactive map of the CIS building. This will be implemented on a website. Professor Prasad is supervising this project. Reach out to Troy Daniels (Tdaniels@skidmore.edu) if you would like to join the project.'/> 
+            {spotlight.length > 0 && (
+                spotlight.map(obj => (
+                    <SpotlightComponent title={obj.title} discription={obj.discription}/> 
+                ))
+            )}
         </div>
     )
 }

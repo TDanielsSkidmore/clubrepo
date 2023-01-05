@@ -13,7 +13,7 @@ export const Events = () => {
             return response.json()
         })
         .then(data => {
-            setEvents(data)
+            setEvents(data[0].events)
         })
     }
 
