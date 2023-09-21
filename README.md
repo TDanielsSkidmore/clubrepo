@@ -1,3 +1,9 @@
+This is a demo for the Skidmore Computer Science club. It is currently not in production but may be in the future. feel free to check it out. (download all of the file as a zip, expand the zip, open a terminal from that folder and run "npm start"
+
+Creator: Troy Daniels
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
